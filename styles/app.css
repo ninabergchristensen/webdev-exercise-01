@@ -1,0 +1,85 @@
+body, p, ul {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+h1 {
+  font-size: 2rem;
+  color: white;
+  padding: 20px;
+  margin: 0px;
+}
+
+h2 {
+  margin-top: 0px;
+}
+
+p, a {
+  font-size: 0.75rem;
+}
+
+em {
+  text-decoration: underline;
+  font-style: normal;
+}
+
+main {
+  margin: 40px auto;
+  width: 90%;
+  max-width: 400px;
+}
+
+header {
+  background-color: mediumorchid;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+  background-color: black;
+}
+
+section p, section h1, section h2, section h3, section h4, section h5, section h6 {
+  color: white;
+}
+
+section a {
+  background-color: mediumorchid;
+  color: black;
+}
+
+section a:hover {
+  background-color: #ebcff2;
+}
+
+section:nth-child(odd) {
+  background-color: #e6e6e6;
+}
+
+section:nth-child(odd) p, section:nth-child(odd) h1, section:nth-child(odd) h2, section:nth-child(odd) h3, section:nth-child(odd) h4, section:nth-child(odd) h5, section:nth-child(odd) h6 {
+  color: black;
+}
+
+section:nth-child(odd) a {
+  background-color: black;
+  color: white;
+}
+
+section:nth-child(odd) a:hover {
+  background-color: #4d4d4d;
+}
+
+a {
+  display: inline-block;
+  padding: 10px;
+  margin: 20px 10px 0 0;
+  text-decoration: none;
+}
+/*# sourceMappingURL=app.css.map */

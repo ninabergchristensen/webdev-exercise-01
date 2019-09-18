@@ -1,0 +1,47 @@
+@mixin headline ($size, $color) {
+    font-size: $size;
+    color: $color;
+}
+
+@mixin section ($color, $color2, $color3) {
+    padding: $padding;
+    background-color: $color;
+    
+    p, h1, h2, h3, h4, h5, h6 {
+        color: $color2;
+    }
+    
+    a {
+        background-color: $color3;
+        color: $color;
+
+        &:hover {
+            background-color: lighten($color3, 30%);
+        }
+    }
+
+    &:nth-child(odd) {
+        background-color: lighten($color, 90%);
+
+        p, h1, h2, h3, h4, h5, h6 {
+            color: $color;
+        } 
+
+        a {
+            background-color: $color;
+            color: $color2;
+
+            &:hover {
+                background-color: lighten($color, 30%);
+            }
+        }
+    }
+
+}
+
+@mixin button {
+    display: inline-block;
+    padding: $padding / 2;
+    margin: ($padding) ($padding / 2) 0 0;
+    text-decoration: none;
+}

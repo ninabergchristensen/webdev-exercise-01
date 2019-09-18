@@ -1,0 +1,23 @@
+body {
+    font-family: $font;
+    color: $lightColor;
+}
+
+h1 {
+    @include headline(2rem, $lightColor);
+    padding: $padding;
+    margin: 0px;
+}
+
+h2 {
+    margin-top: 0px;
+}
+
+p, a {
+    font-size: 0.75rem;
+}
+
+em {
+    text-decoration: underline;
+    font-style: normal;
+}
